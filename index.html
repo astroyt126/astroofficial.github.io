@@ -10,24 +10,15 @@
 
 body{
 margin:0;
-background:#06070a;
-color:#e4e6eb;
+background:#05060a;
+color:#e6e8ef;
 font-family:Segoe UI, Arial;
-overflow-x:hidden;
 }
 
-/* fade in */
-body{
-animation:fadein 1.5s;
-}
-@keyframes fadein{
-from{opacity:0;}
-to{opacity:1;}
-}
+/* HEADER */
 
-/* header */
 .header{
-background:#0c0d12;
+background:#0b0c12;
 padding:15px 30px;
 border-bottom:1px solid #2a2d35;
 display:flex;
@@ -35,73 +26,63 @@ align-items:center;
 gap:15px;
 }
 
-/* spinning seal */
 .seal{
-width:45px;
-height:45px;
+width:50px;
+height:50px;
 border-radius:50%;
 border:2px solid #6c8cff;
 display:flex;
 align-items:center;
 justify-content:center;
-animation:spin 12s linear infinite;
-box-shadow:0 0 15px #6c8cff44;
+animation:spin 15s linear infinite;
 }
 
 @keyframes spin{
 100%{transform:rotate(360deg);}
 }
 
+/* LAYOUT */
+
 .container{
 display:flex;
-max-width:1400px;
+max-width:1600px;
 margin:auto;
 }
 
-/* sidebar */
 .sidebar{
 width:320px;
 background:#0b0c11;
-border-right:1px solid #2a2d35;
 padding:20px;
+border-right:1px solid #2a2d35;
 }
 
-/* profile image */
-.profile-img{
-width:100%;
+.content{
+flex:1;
+padding:40px;
+}
+
+/* INFOBOX */
+
+.infobox{
+background:#10121a;
+border:1px solid #333;
+padding:15px;
+}
+
+.profile{
 height:200px;
-background:linear-gradient(45deg,#0b0c11,#141622);
+background:#0f111a;
 border:1px solid #333;
 display:flex;
 align-items:center;
 justify-content:center;
-color:#6c8cff;
-font-weight:bold;
+margin-bottom:15px;
 }
 
-/* infobox */
-.infobox{
-margin-top:15px;
-border:1px solid #333;
-background:#10121a;
-padding:15px;
-}
+/* SECTION */
 
-/* content */
-.content{
-flex:1;
-padding:30px;
-}
-
-/* section */
 .section{
 margin-bottom:40px;
-animation:slideUp 1s ease;
-}
-
-@keyframes slideUp{
-from{transform:translateY(30px);opacity:0;}
-to{transform:translateY(0);opacity:1;}
 }
 
 .section h2{
@@ -110,47 +91,47 @@ padding-bottom:5px;
 color:#8aa2ff;
 }
 
-/* table */
+/* TABLE */
+
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:15px;
 }
 
 th, td{
 border:1px solid #333;
-padding:12px;
+padding:10px;
 }
 
 th{
-background:#111420;
+background:#141824;
 }
 
-tr:hover{
-background:#161a2b;
-transition:0.3s;
-}
+/* TERMINAL */
 
-/* terminal box */
 .terminal{
-background:#05060a;
-border:1px solid #333;
+background:black;
+color:#6c8cff;
 padding:15px;
 font-family:Consolas;
+border:1px solid #333;
+}
+
+/* CLASSIFIED */
+
+.classified{
+background:#0a0a0a;
+border:1px solid #6c8cff;
+padding:20px;
 color:#6c8cff;
 }
 
-/* glow */
-.glow{
-color:#8aa2ff;
-text-shadow:0 0 10px #6c8cff88;
-}
+/* FOOTER */
 
-/* footer */
 .footer{
-border-top:1px solid #333;
-padding:15px;
 text-align:center;
+padding:20px;
+border-top:1px solid #333;
 color:#666;
 }
 
@@ -171,20 +152,19 @@ color:#666;
 
 <div class="sidebar">
 
-<div class="profile-img">
-ASTRO PROFILE
+<div class="profile">
+PROFILE RECORD
 </div>
 
 <div class="infobox">
 
-<b>Name:</b> ASTRO<br>
+<b>Alias:</b> ASTRO<br>
 <b>Established:</b> 2016<br>
 <b>Origin:</b> Andhra Pradesh, India<br>
-<b>Age:</b> 16<br>
 <b>Status:</b> Active<br>
 <b>Classification:</b> Independent Ethical Security Learner<br>
-<b>Archive ID:</b> AST-2016-IND<br>
-<b>Visibility:</b> Low-profile<br>
+<b>Archive ID:</b> AST-IND-2016-CORE<br>
+<b>Continuity:</b> Verified<br>
 
 </div>
 
@@ -194,31 +174,23 @@ ASTRO PROFILE
 
 <div class="section">
 
-<h2>Overview</h2>
-
-<p>
-<span class="glow">ASTRO</span> is an independent digital identity established in 2016. The identity represents a persistent and structured online presence originating from Andhra Pradesh, India. ASTRO is associated with digital infrastructure awareness, cybersecurity learning, and identity continuity across modern internet platforms.
-</p>
-
-<p>
-Despite maintaining low public exposure, archive records indicate consistent presence, technical curiosity, and long-term digital continuity.
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Profile</h2>
+<h2>Executive Summary</h2>
 
 <p>
 
-ASTRO began developing technical awareness at an early stage and established an independent identity archive in 2016. Since then, the identity has remained continuously active across digital environments.
+ASTRO is a persistent independent digital identity established in 2016. Originating from Andhra Pradesh, India, ASTRO represents a structured and continuously active presence within modern digital infrastructure.
 
 </p>
 
 <p>
 
-The identity is associated with system-level curiosity, technology exploration, and long-term infrastructure presence observation.
+The identity has maintained operational continuity and archive stability across multiple technological environments. Archive records confirm uninterrupted presence and identity persistence.
+
+</p>
+
+<p>
+
+ASTRO is associated with digital system awareness, infrastructure observation, and independent technological learning.
 
 </p>
 
@@ -226,66 +198,119 @@ The identity is associated with system-level curiosity, technology exploration, 
 
 <div class="section">
 
-<h2>Documented Activity and Achievements</h2>
+<h2>Extended Biography</h2>
+
+<p>
+
+The ASTRO identity was established during early digital development phases. Initial archive records indicate early engagement with computer systems and internet environments.
+
+</p>
+
+<p>
+
+Over time, the identity expanded its operational awareness and established a persistent archive presence.
+
+</p>
+
+<p>
+
+The identity continues to evolve through ongoing digital interaction and technological exploration.
+
+</p>
+
+<p>
+
+ASTRO maintains long-term continuity and stable identity recognition.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Documented Timeline</h2>
 
 <table>
 
 <tr>
 <th>Year</th>
-<th>Activity</th>
+<th>Archive Record</th>
 </tr>
 
 <tr>
 <td>2016</td>
-<td>Digital identity established and initial online presence created</td>
+<td>Identity initialized</td>
+</tr>
+
+<tr>
+<td>2017</td>
+<td>Digital presence maintained</td>
 </tr>
 
 <tr>
 <td>2018</td>
-<td>Developed understanding of system environments and internet infrastructure</td>
+<td>STARTED LEARNING CODING AND TECH KNOWLEDGE</td>
 </tr>
 
 <tr>
 <td>2019</td>
-<td>Began exploring web technologies including HTML and browser systems</td>
+<td>CREATED HIS FIRST GAME AND WEBSITES</td>
 </tr>
 
 <tr>
 <td>2020</td>
-<td>Expanded technical awareness and independent digital learning</td>
+<td>EARNED HIS FIRST CLIENT FOR 40k $ FOR BUYING HIS GAME</td>
 </tr>
 
 <tr>
 <td>2021</td>
-<td>Maintained continuous digital identity presence across platforms</td>
+<td>WENT OFFLINE FOR 4 MONTHS AND CAME AGAIN TO BAN 37 ILLEGAL GAMES</td>
 </tr>
 
 <tr>
 <td>2022</td>
-<td>Started working with structured digital profiles and identity systems</td>
+<td>Operational presence expanded</td>
 </tr>
 
 <tr>
 <td>2023</td>
-<td>Expanded knowledge of system structure and online infrastructure</td>
+<td>TOOK THE TITLE AS ASTRO FOR TAKING DOWN 32nd SECTOR OF DARKWEB FOR THE FIRST TIME EVER</td>
 </tr>
 
 <tr>
 <td>2024</td>
-<td>Established independent identity archive and structured web presence</td>
+<td>TOOK DOWN ENTIRE META SERVER TO SAVE A MINOR's LIFE AND CAREER</td>
 </tr>
 
 <tr>
 <td>2025</td>
-<td>Developed and deployed independent hosted identity website</td>
+<td>HACKED AND DELETED OVER 4000+ CHILD PORNOGRAPHIC SITES</td>
 </tr>
 
 <tr>
 <td>2026</td>
-<td>Archive status verified active and continuous</td>
+<td>Status confirmed active</td>
 </tr>
 
 </table>
+
+</div>
+
+<div class="section">
+
+<h2>Technical Profile</h2>
+
+<p>
+
+Archive records indicate consistent technical awareness and digital environment interaction.
+
+</p>
+
+<p>
+
+The identity maintains structured system-level observation capabilities and persistent infrastructure awareness.
+
+</p>
 
 </div>
 
@@ -295,12 +320,12 @@ The identity is associated with system-level curiosity, technology exploration, 
 
 <div class="terminal">
 
+> archive_id: AST-IND-2016-CORE<br>
 > identity_status: ACTIVE<br>
-> archive_status: VERIFIED<br>
-> classification: ETHICAL_SECURITY_LEARNER<br>
-> origin: INDIA<br>
-> continuity: STABLE<br>
-> archive_integrity: CONFIRMED<br>
+> continuity: VERIFIED<br>
+> classification: ETHICAL_LEARNER<br>
+> archive_integrity: SECURE<br>
+> visibility: LOW_PROFILE<br>
 
 </div>
 
@@ -308,19 +333,40 @@ The identity is associated with system-level curiosity, technology exploration, 
 
 <div class="section">
 
-<h2>Recognition</h2>
+<h2>Recognition and Assessment</h2>
 
 <p>
 
-ASTRO is recognized as a persistent independent digital identity maintaining structured archive continuity since 2016.
+ASTRO is recognized as a persistent and stable independent digital identity.
 
 </p>
 
 <p>
 
-The identity demonstrates long-term operational stability, technical awareness, and consistent infrastructure presence.
+Archive continuity and operational stability remain intact.
 
 </p>
+
+<p>
+
+Identity persistence confirmed across multiple archive verification cycles.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Classified Archive Section</h2>
+
+<div class="classified">
+
+ACCESS LEVEL: PUBLIC ARCHIVE<br>
+ARCHIVE STATUS: VERIFIED<br>
+IDENTITY CONTINUITY: CONFIRMED<br>
+MONITORING STATUS: PASSIVE<br>
+
+</div>
 
 </div>
 
@@ -330,7 +376,7 @@ The identity demonstrates long-term operational stability, technical awareness, 
 
 <div class="footer">
 
-Official Identity Archive System — ASTRO — EST. 2016
+Official Identity Archive System — ASTRO — Established 2016
 
 </div>
 
